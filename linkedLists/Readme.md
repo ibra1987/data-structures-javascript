@@ -6,7 +6,7 @@ A linked list is a **linear** data structure that consists of a **sequence of el
 
 In Javasript, there is no built in linked list data structure, but we can represent it this way:
 
-`code`
+```
 
 const linkedList = {
 value:foo,
@@ -22,7 +22,7 @@ next:null
 }
 }
 
-`code`
+```
 
 ## The big O of a linked list
 
