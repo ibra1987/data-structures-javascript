@@ -9,17 +9,17 @@ In Javasript, there is no built in linked list data structure, but we can repres
 ```
 
 const linkedList = {
-value:foo,
-next:{
-value:bar,
-next:{
-value:baz,
-naxt:{
-value: someValue,
-next:null
-}
-}
-}
+        value:foo,
+        next:{
+            value:bar,
+            next:{
+                value:baz,
+                naxt:{
+                    value: someValue,
+                next:null
+                }
+            }
+        }
 }
 
 ```
@@ -30,4 +30,4 @@ next:null
 - **Appending**: Appending an element to the end of the list take constant time ===> O(1).
 - **Prepending**: Prependingan element to the beginning of the list take constant time ===> O(1).
 - **Removing** : Removing a node from a specified index ===> O(n).
-  -- **Lookup** : Lookup and search also take n time ===> O(n).
+- **Lookup** : Lookup and search also take n time ===> O(n).
