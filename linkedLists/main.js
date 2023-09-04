@@ -108,11 +108,31 @@ class LinkedList{
     // implement deleting methof
 
     remove(index){
-        //TODO inmplementing the deleting method
+        /*we want to remove the node with the specified index. so we grab the node just before it and the item that comes after for ex
+         we have this linked list 1=>5=>6=>9, if we want to remove the node with the value of 6, we need to grap the item of value 5 and the item of
+         value 9 and make the node 6 point to the node 9
+        */
+
+         // we grab the item before the wanted node
+        const nodeBeforeIndex = this.getNodeByIndex(index-1);
+        
+        // we get the node after the wanted node
+        const nextNode = nodeBeforeIndex.next;
+        // set the node before the wanted node point to the node that comes after the wanted node, so the wanted node is no longer beeing pointed by any node
+        nodeBeforeIndex.next = nextNode.next;
+
+        // we decrease the length of the linked list
+        this.length--
+
+        // return the linked list itself
+        return this;
     }
+
+    
 }
 
 const mlk = new LinkedList(1)
 mlk.append(2)
 mlk.append(3)
-console.log(JSON.stringify(mlk.insert(1,7)))
+console.log(JSON.stringify(mlk))
+console.log(JSON.stringify(mlk.remove(1)))
